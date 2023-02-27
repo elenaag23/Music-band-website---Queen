@@ -1,0 +1,178 @@
+*{ margin:0;
+    padding:0;
+    text-decoration:none;
+    }
+
+
+body{background-color:pink;}
+
+nav{ height: 50px;
+    background-color:#ffd700;
+   }
+
+ul.meniu{ display:flex;
+    flex-direction:row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    text-align: center;
+    list-style-type: none;
+    
+  }
+
+.album{top:10%;
+      position:relative;
+     }
+
+ol.songs li{text-decoration: none;
+            font-size:20px;
+            font-family:Georgia, 'Times New Roman', Times, serif;
+            margin-left:40px;
+            margin-bottom:40px;
+            color:black;
+            text-align:center;
+        }
+
+#album a{color:blue;}
+
+#album > h1{
+    position: absolute;
+    font-size: 30px;
+    transform: translate(-50%, -50%);
+    font-family: serif;
+   text-align: center;
+   left:50%;
+   top:25%;
+
+}
+
+  h1 {  color: black;
+    -webkit-text-fill-color: lightblue; 
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+    letter-spacing: 10px;
+}
+
+p{color:black;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size:25px;
+    margin-left:25px;
+    margin-right:10px;
+}
+
+
+#album > img
+        {position:relative;
+         text-align:right;
+        border: 2px solid white;
+        height:200px;
+        width:400px;
+        margin-top:30px;
+        left:70%;
+       }
+
+.image {
+        position: absolute;
+        top: 50%;
+        width: 100%;
+        left:45%;
+      }
+
+ul.meniu li{
+    flex-grow: 1;
+    border: 1px solid white;
+    height: 50px;
+    width: 100%;
+    line-height: 50px;
+    background-color:#ffd700;
+    list-style-type: none;
+}
+
+nav a{ 
+    text-decoration: none;
+       font-family:serif;
+       color:black;
+    text-align: justify;}
+ 
+ 
+ ul.submeniu{
+     visibility:hidden;
+ }
+ 
+ ul.meniu > li:hover > ul.submeniu
+ { visibility: visible;
+ position: relative;
+ z-index:10;
+ }
+ 
+ ul.meniu li:hover{ background-color:rgb(221, 39, 39);}
+
+
+ footer{
+    background-color: black;
+}
+
+footer>img
+{display:flex;
+    flex-direction:row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    text-align: center;
+    list-style-type: none;
+}
+
+ul.sm{ display:flex;
+    flex-direction:row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    text-align: center;
+    list-style-type: none;
+    z-index:10;
+  }
+
+ul.sm li{
+flex-grow: 1;
+border: 1px solid white;
+height: 50px;
+width: 100%;
+background-color:black;
+list-style-type: none;
+margin-top:40px;
+}
+
+
+#grid{
+    display:grid;
+    grid-template-areas:
+    "zona1 zona2 zona2 zona2 zona2 zona2 zona2 zona2 zona2 zona2 zona2 zona2 zona2 zona2 zona2 zona2 zona2 zona2 zona2 zona2 zona2 zona2 zona2 zona2 zona2 zona2 zona2 zona2 zona2 zona2";
+    grid-row-gap:10px;
+    grid-column-gap:10px;
+    padding:10px; }
+
+#icon{grid-area:zona1;}
+
+#retele{grid-area:zona2;}
+
+ul.sm>img {margin-top:10px;}
+
+@media only screen and (max-width:768px)
+{
+    #album > img
+        {position:relative;
+         text-align:center;
+        border: 2px solid black;
+        height:200px;
+        width:200px;
+        margin-top:170px;
+        left:30%;
+        z-index:-1;
+       }
+
+.image {
+        position: relative;
+        top: 50%;
+        width: 100%;
+        left:45%;
+      }
+}
+
+

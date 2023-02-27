@@ -1,0 +1,238 @@
+*{ margin:0;
+    padding:0;
+  }
+
+nav{ height: 50px;
+    background-color:#ffd700;
+   }
+
+body{background-color: black;
+}
+
+nav{ height: 50px;
+  background-color:#ffd700;
+ }
+
+ul.meniu{ display:flex;
+  flex-direction:row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  text-align: center;
+  list-style-type: none;
+  
+}
+
+body a{color:#e79769;
+      text-decoration: underline;}
+
+ul.meniu li{
+  flex-grow: 1;
+  border: 1px solid white;
+  height: 50px;
+  width: 100%;
+  line-height: 50px;
+  background-color:#ffd700;
+  list-style-type: none;
+}
+
+nav a{ 
+  text-decoration: none;
+     font-family:serif;
+     color:black;}
+
+
+ul.submeniu{
+   visibility:hidden;
+}
+
+ul.meniu > li:hover > ul.submeniu
+{ visibility: visible;
+position: relative;
+z-index:10;
+}
+
+ul.meniu li:hover{ background-color:rgb(221, 39, 39);}
+
+
+ul.date{
+       margin-left:10px;
+        font-size:30px;}
+
+.container1 {
+    color:#e79769;
+    font-family:serif;
+    font-size:30px;
+    
+  }
+
+
+.poze {
+    position: absolute;
+    top: 10%;
+    width: 100%;
+    font-size: 18px;
+    margin-left:20px;
+    height:30%;
+    width:25%;
+    text-align:right;
+    
+  }
+
+
+
+.text{z-index:1;
+        top:15%;
+        position:absolute;
+       font-size:20px;}
+
+
+.poze>img {display:flex;
+    flex-direction:column;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    text-align: right;
+    list-style-type: none;
+    margin-top:150px;
+    position:relative;
+   
+}
+
+.container1>img:nth-of-type(2){display:none;}
+.container1>img:nth-of-type(3){display:none;}
+.container1>img:nth-of-type(4){display:none;}
+.container1>img:nth-of-type(5){display:none;}
+
+.images>li>img{height:190px;
+                width:270px;
+                position:relative;
+                float:right;
+                left:1300px;
+                z-index:1;
+                top:10%;
+                border: 2px solid #e79769;
+            }
+
+
+
+ul.images {display:flex;
+    flex-direction:column;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    text-align: right;
+    list-style-type: none;
+    z-index:10;
+    height:100px;
+    width:100px;}
+
+ul.images>img{height:50px;
+              width:50px;}
+
+  footer{
+    background-color: black;
+}
+
+footer>img
+{display:flex;
+    flex-direction:row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    text-align: center;
+    list-style-type: none;
+ margin-top:0px;
+}
+
+ul.sm{ display:flex;
+    flex-direction:row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    text-align: center;
+    list-style-type: none;
+    z-index:10;
+  }
+
+ul.sm li{
+flex-grow: 1;
+border: 1px solid white;
+height: 50px;
+width: 100%;
+background-color:black;
+list-style-type: none;
+margin-top:40px;
+}
+
+
+#grid{
+    display:grid;
+    grid-template-areas:
+    "zona1 zona2 zona2 zona2 zona2 zona2 zona2 zona2 zona2 zona2 zona2 zona2 zona2 zona2 zona2 zona2 zona2 zona2 zona2 zona2 zona2 zona2 zona2 zona2 zona2 zona2 zona2 zona2 zona2 zona2";
+    grid-row-gap:10px;
+    grid-column-gap:10px;
+    padding:10px; }
+
+#icon{grid-area:zona1;}
+
+#retele{grid-area:zona2;}
+
+ul.sm>img {margin-top:10px;}
+
+
+@media only screen and (max-width:768px)
+{
+  
+
+
+  .images>li>img
+  {height:190px;
+    width:270px;
+    position:relative;
+    float:left;
+    left:170px;
+    z-index:1;
+    top:1200px;
+    border: 2px solid #e79769;
+    text-align: center;
+}
+  .container1>img:nth-of-type(2){display:block;}
+  .container1>img:nth-of-type(3){display:block;}
+  .container1>img:nth-of-type(4){display:block;}
+  .container1>img:nth-of-type(5){display:block;}
+
+  .poze {
+    position: absolute;
+    top: 10%;
+    width: 100%;
+    font-size: 18px;
+    height:30%;
+    width:25%;
+    display: block;
+    
+  }
+
+
+
+.text{z-index:1;
+        top:15%;
+        position:absolute;
+      font-size:20px;}
+
+      #grid{
+        display:grid;
+        grid-template-areas:
+        "zona1 zona2 zona2 zona2 zona2 zona2 zona2 zona2 zona2 zona2 zona2 zona2 zona2 zona2 zona2 zona2 zona2 zona2 zona2 zona2 zona2 zona2 zona2 zona2 zona2 zona2 zona2 zona2 zona2 zona2";
+        grid-row-gap:10px;
+        grid-column-gap:10px;
+        padding:10px; }
+    
+    #icon{grid-area:zona1;}
+    
+    #retele{grid-area:zona2;}
+
+
+
+
+
+  
+
+} 
+
+

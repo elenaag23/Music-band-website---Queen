@@ -1,0 +1,242 @@
+*{ margin:0;
+    padding:0;}
+
+header>img {
+    height:412px;
+    width:740px;
+    z-index:-1;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    }
+
+header>h1{
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    font-size: 225px;
+    transform: translate(-50%, -50%);
+    font-family: serif;
+  
+    opacity: 0.8; 
+    animation-name: animatie1;
+    animation-duration: 4s;
+
+}
+header{background-color: black;}
+
+header>p{float:right;
+         color:white;}
+
+body{background-color:#ffffe0;}
+
+h1 {  color: black;
+    -webkit-text-fill-color: #ffd700; 
+    -webkit-text-stroke-width: 3px;
+    -webkit-text-stroke-color: black;
+    letter-spacing: 20px;
+}
+
+@keyframes animatie1
+{ from {opacity:0;}
+  to {opacity:0.8}}
+
+
+.myStyle {
+    background-color: #ffd700;
+    padding: 10px;
+  }
+
+
+nav{ height: 50px;
+    background-color:#ffd700;
+   }
+
+ul.meniu{ display:flex;
+    flex-direction:row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    text-align: center;
+    list-style-type: none;
+    
+  }
+
+ul.meniu li{
+    flex-grow: 1;
+    border: 1px solid white;
+    height: 50px;
+    width: 100%;
+    line-height: 50px;
+    background-color:#ffd700;
+    list-style-type: none;
+}
+
+#buton{
+       position:absolute;
+       left:1000px;
+       bottom:50px;
+       background-color: #ffd700;
+       height: 70px;
+       width:70px;
+       top:1460px;
+       font-family:serif;
+    }
+
+
+nav a{ 
+    text-decoration: none;
+       font-family:serif;
+       color:black;}
+ 
+ 
+ ul.submeniu{
+     visibility:hidden;
+ }
+ 
+ ul.meniu > li:hover > ul.submeniu
+ { visibility: visible;
+ position: relative;
+ z-index:10;
+ }
+ 
+ ul.meniu li:hover{ background-color:rgb(221, 39, 39);}
+
+#despre{
+    display:grid;
+    grid-template-areas:
+    "zona1 zona2"
+    "zona3 zona4"
+    "zona3 zona5"
+    }
+
+#p1 {grid-area: zona1;}
+#p2 {grid-area: zona4;}
+#p3 {grid-area: zona5;}
+#queen3{grid-area: zona2;}
+#queen6{grid-area: zona3;}
+
+section{padding:40px;
+background-color: #ffffe0;}
+
+section > p
+{ margin-top: 70px;
+font-family:Georgia, 'Times New Roman', Times, serif;
+font-size:30px;
+text-align:center;
+list-style-type: none;
+
+}
+
+section>p>a{text-decoration: none;
+            color:black;}
+
+
+footer{
+    background-color: black;
+}
+
+footer>img
+{display:flex;
+    flex-direction:row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    text-align: center;
+    list-style-type: none;
+}
+
+ul.sm{ display:flex;
+    flex-direction:row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    text-align: center;
+    list-style-type: none;
+    z-index:10;
+  }
+
+ul.sm li{
+flex-grow: 1;
+border: 1px solid white;
+height: 50px;
+width: 100%;
+background-color:black;
+list-style-type: none;
+margin-top:40px;
+}
+
+section>figure{position:relative;}
+
+section>figure:nth-of-type(1)
+{ 
+float:right; 
+margin-top:10px;
+left:30%;
+}
+
+
+
+#grid{
+    display:grid;
+    grid-template-areas:
+    "zona1 zona2 zona2 zona2 zona2 zona2 zona2 zona2 zona2 zona2 zona2 zona2 zona2 zona2 zona2 zona2 zona2 zona2 zona2 zona2 zona2 zona2 zona2 zona2 zona2 zona2 zona2 zona2 zona2 zona2";
+    grid-row-gap:10px;
+    grid-column-gap:10px;
+    padding:10px; }
+
+#icon{grid-area:zona1;}
+
+#retele{grid-area:zona2;}
+
+ul.sm>img {margin-top:10px;}
+
+@media only screen and (max-width:768px)
+{
+    #despre{
+        display:grid;
+        grid-template-areas:
+        "zona1"
+        "zona2"
+        "zona3"
+        "zona4"
+        }
+    
+    #p1 {grid-area: zona1;}
+    #p2 {grid-area: zona4;}
+    #queen3{grid-area: zona2;}
+    #queen6{grid-area: zona3;}
+
+    section>figure:nth-of-type(1)
+{ 
+
+left:3%;
+top:7%;}
+
+
+section>figure:nth-of-type(2)
+{ 
+
+text-align:center;
+top:10%;
+}
+
+header>img {
+    height:350px;
+    width:550px;
+    z-index:-1;
+    display: block;
+    }
+
+header>h1{
+    position: absolute;
+    top: 30%;
+    left: 52%;
+    font-size: 150px;
+    transform: translate(-50%, -50%);
+    font-family: serif;
+  
+
+}
+
+
+}
+
+
